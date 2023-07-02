@@ -1,0 +1,18 @@
+/*
+    Kaelyn Lang
+    Date: 11/28/2022
+*/
+table{
+    margin: 1.5rem auto 2rem auto;
+}
+td,th{
+    padding: .75rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--acc-bg-color);
+}
+th{
+    background-color: var(--acc-bg-color);
+    color: var(--acc-hl-color);
+}
+tr:nth-child(even){background-color: rgba(0,0,0,.25);}

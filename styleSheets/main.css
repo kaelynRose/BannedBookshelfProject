@@ -1,0 +1,84 @@
+/*
+    Kaelyn Lang
+    Date: 11/28/2022
+*/
+:root{
+    --main-bg-color: #360100;
+    --acc-bg-color: #462203;
+    --acc-hl-color: #A84E00;
+    --foot-bg-color: #2A0100;
+    --text-hl-color: #A80400;
+}
+body{
+    background-color: var(--main-bg-color);
+    color: rgba(255, 255, 255, .7);
+}
+hr{
+    border-color: var(--acc-hl-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-hl-color);
+}
+main{
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+footer{
+    height: 2.5rem;
+    width: 100%;
+    line-height: 2.5rem;
+    border-top: 2px solid var(--text-hl-color);
+    border-bottom: 2px solid var(--text-hl-color);
+    clear: both;
+}
+header h1{
+    background-image: url('../images/headerImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, .7) 0 0 0 15vh inset;
+    line-height: 15vh;
+    color: #FFFFFF;
+}
+h2,h3{ margin-bottom: 0; }
+nav{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3px;
+}
+nav a{
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    background-color: var(--acc-bg-color);
+    color: var(--acc-hl-color);
+}
+nav a:hover{
+    color: var(--acc-bg-color);
+    background-color: var(--acc-hl-color);
+    transition: background-color .5s ease-in-out, color .2s ease-in-out;
+    cursor: pointer;
+}
+p{ font-size: 1.2rem; }
+body,hr,header h1{
+    margin: 0;
+}
+header,footer{
+    background-color: var(--foot-bg-color);
+    text-align: center;
+
+}
+/* BIGGER SCREEN */
+@media screen and (min-width: 40em) {
+    main{ width: 75%; }
+    nav{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+    }
+    header h1{ font-size: 3rem; }
+    h2{ font-size: 2rem; }
+    h3{ font-size: 1.5rem; }
+}

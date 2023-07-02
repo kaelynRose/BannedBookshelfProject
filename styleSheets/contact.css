@@ -1,0 +1,55 @@
+/*
+    Kaelyn Lang
+    Date: 11/28/2022
+*/
+form{
+    background-color: rgba(255, 255, 255, .6);
+    color: #000000;
+    padding: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px #000000;
+    margin: 1rem 0;
+}
+input[type="text"],input[type="email"],select,label{ display: block; }
+input[type="text"],input[type="email"],select,textarea{ margin-bottom: 1rem; }
+select{
+    width: 100%;
+    height: 2rem;
+}
+label{
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+textarea{ resize: none; }
+input[type="submit"],input[type="reset"]{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--acc-bg-color);
+    color: var(--acc-hl-color);
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: var(--acc-hl-color);
+    color: var(--acc-bg-color);
+    cursor: pointer;
+}
+div.buttonContainer{
+    width: fit-content;
+    margin: 0 auto;
+}
+input[type="text"],input[type="email"],textarea{
+    width: calc(100% - .5rem);
+    padding: .5rem;
+}
+input[type="text"],input[type="email"],select,label,textarea{ border-radius: 5px; }
+input[type="text"],input[type="email"],select,label,textarea,input[type="submit"],input[type="reset"]{
+    border: none;
+    font-size: 1.25rem;
+}
+/* BIGGER SCREEN */
+@media screen and (min-width: 50em){
+    form{
+        width: 70%;
+        margin: 1.5rem auto;
+    }
+    input[type="text"],input[type="email"],select,label,textarea,input[type="submit"],input[type="reset"]{ font-size: 1.25rem; }
+}

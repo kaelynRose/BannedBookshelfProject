@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Author: Kaelyn Lang
+    Date: 11/28/2022
+-->
+<html lang="en">
+
+    <head>
+        <title>Book Club</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <link rel="stylesheet" href="styleSheets/main.css">
+        <link rel="stylesheet" href="styleSheets/bookclub.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>The Forbidden Bookshelf</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="library.html">Library</a>
+                <a href="stats.html">Book Stats</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="bookclub.html">Book Club</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Join Our Book Club!</h2>
+                <hr>
+                <p>Want recommendations after you finish your book? Looking for the next controversial title to add to your shelf? Sign up for our book club to receive personal recommendations, the newest lists of banned books, and our newsletter to keep up with us!</p>
+            </section>
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <label for="fName">First Name:</label>
+                <input id="fName" type="text" name="fName" placeholder="First Name" required>
+                <label for="lName">Last Name:</label>
+                <input id="lName" type="text" name="lName" placeholder="Last Name" required>
+                <label for="email">E-mail Address:</label>
+                <input id="email" type="email" name="email" placeholder="email@email.com" required>
+                <fieldset>
+                    <legend>Favorite Genres</legend>
+                    <label><input type="checkbox" name="fantasy" value="fantasy">Fantasy</label>
+                    <label><input type="checkbox" name="sci-fi" value="sci-fi">Science Fiction</label>
+                    <label><input type="checkbox" name="mystery" value="mystery">Mystery</label>
+                    <label><input type="checkbox" name="horror" value="horror">Horror</label>
+                    <label><input type="checkbox" name="romance" value="romance">Romance</label>
+                    <label><input type="checkbox" name="lgbt" value="lgbt">LGBTQ+</label>
+                    <label><input type="checkbox" name="memoir" value="memoir">Memoirs and Autobiographies</label>
+                    <label><input type="checkbox" name="history" value="history">History</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you like our newsletter?</legend>
+                    <label><input type="radio" name="newsletter" value="No">No, thanks.</label>
+                    <label><input type="radio" name="newsletter" value="Yes">Yes, please!</label>
+                </fieldset>
+                <label for="category">What category do you prefer if the genres you selected aren't available?</label>
+                <select id="category" name="preferredCategory">
+                    <option value="No Preference">No Preference</option>
+                    <option value="Non-fiction">Non-fiction</option>
+                    <option value="Fiction">Fiction</option>
+                </select>
+                <div class="buttonContainer">
+                    <input type="submit" value="Sign Me Up!">
+                    <input type="reset" value="Clear Form">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <address>
+                Developed by: <a href="mailto:klang3@madisoncollege.edu">klang3@madisoncollege.edu</a>
+            </address>
+        </footer>
+
+    </body>
+
+</html>
